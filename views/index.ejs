@@ -30,8 +30,8 @@
         <% taskList.forEach((task)=>{ %>
         <li>
           <%= task.task %>|<%= task.date.toLocaleDateString('pt-br') %>
-          <a href="/getById/<%= task._id %>">Editar</a>
-          <a href="">Apagar</a>
+          <a href="/getById/<%= task._id %>/update">Editar</a>
+          <a href="/getById/<%= task._id %>/delete">Apagar</a>
         </li>
         <% }) %>
       </ul>
@@ -42,9 +42,9 @@
             <a href="/">x</a>
             <h2>Confirmaçao</h2>
             <br>
-            <p>Deseja realmente apagar a tarefa: <%= taskDelete.task %></p>
-            <a href="">Não</a>
-            <a href="/deletaTask/<%= taskDelete._id %>">SIm</a>
+            <p>Deseja realmente apagar a tarefa: <%= taskDelete.task%>?</p>
+            <a href="/">Não</a>
+            <a href="/deleteOne/<%= taskDelete._id %>">Sim</a>
 
         </div>
     </section>
