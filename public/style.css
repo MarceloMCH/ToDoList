@@ -32,7 +32,181 @@ input{
   width: 70%;
   padding: .6rem;
   font-size: 1rem;
-  outline: none;§Æ{
+  outline: none;
   margin: .5rem;
 
+}
+button{
+  padding: .6rem;
+  width: 25%;
+  background-color: #202024;
+  color: rgb(109,109,109);
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+button:hover{
+  background-color: #004e14;
+  color: white;
+}
+section#tasks{
+  padding: .5rem;
+
+}
+
+ul{
+  list-style: none;
+}
+ul li{
+  position: relative;
+  padding: .5rem ;
+  background-color: 22,22,24;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  
+}
+ul li a{
+  text-decoration: none;
+  color:white;
+
+}
+ul li  span{
+  color: #ccc;
+  font-style: italic;
+  font-size: .8rem;
+  padding-left: 1rem;
+
+}
+ul li div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul li:nth-child(odd){
+  background-color: #272727;
+
+}
+ul li:hover{
+  background-color: #5a5a5a;
+
+}
+a.btnupdate{
+  padding: .5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: all .3s ease-in-out;
+
+}
+a.btnupdate:hover{
+  background-color: #3643f4;
+  color: #fff;
+}
+a.btndelete{
+  padding: .5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: all .3s ease-in-out;
+}
+a.btndelete:hover{
+  background-color: #f44336;
+  color: #fff;
+}
+section#modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000080;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+div#card{
+  width: 30rem;
+  position: relative;
+  background-color: #202024;
+}
+div#head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+div#card h2{
+  padding: 2rem;
+  margin: 0;
+}
+div#card a#close{
+  right: 0;
+  top: .6rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all .3s ease-in-out;
+
+}
+div#card a#close:hover{
+  background-color: #ff000f;
+  border-radius: 5rem;
+  padding: 0 .3rem;
+}
+div#card hr{
+  width: 90%;
+  margin: 0 auto;
+}
+div#card p{
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+div#btns{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  align-items: center;
+
+}
+div#btns a{
+  text-decoration: none;
+  padding: .5rem;
+  width: 7rem;
+  text-align: center;
+  background-color: #202024;
+  font-size: 1.5rem;
+
+
+}
+div#card a#btnNot{
+  color:#ff000f;
+  border: solid 1px #ff000f;
+  margin-right: 1rem; 
+  transition: all 0.3s ease-in-out;
+}
+div#card a#btnNot:hover{
+  background-color: #ff0000;
+  color: #fff;
+
+}
+div#card a#btnYes:hover{
+  background-color: #00aa2a;
+  color:#fff;
+  
+}
+div#card a#btnYes{
+  color:#00aa2a;
+  border: solid 1px #00aa2a;
+  margin-right: 1rem; 
+  transition: all 0.3s ease-in-out;
 }
